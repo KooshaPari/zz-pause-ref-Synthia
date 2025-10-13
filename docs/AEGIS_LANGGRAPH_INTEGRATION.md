@@ -217,7 +217,7 @@ export MCP_SERVER_URL="http://localhost:8080/mcp"
 
 # Enable LangSmith tracing (optional)
 export LANGCHAIN_TRACING_V2=true
-export LANGCHAIN_API_KEY="your-langsmith-key"
+export LANGCHAIN_API_KEY="YOUR_LANGCHAIN_API_KEY"
 
 # Redis for state persistence (optional)
 export REDIS_URL="redis://localhost:6379"
@@ -354,7 +354,7 @@ Enable tracing for detailed workflow debugging:
 
 ```bash
 export LANGCHAIN_TRACING_V2=true
-export LANGCHAIN_API_KEY="your-key"
+export LANGCHAIN_API_KEY="YOUR_LANGCHAIN_API_KEY"
 ```
 
 View execution traces at [smith.langchain.com](https://smith.langchain.com)

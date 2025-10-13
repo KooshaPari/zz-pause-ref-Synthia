@@ -140,7 +140,7 @@ To require OAuth for `/status`, set `STATUS_REQUIRE_AUTH=1` with `ENABLE_HTTP_OA
       "args": ["-c", "for p in $(which uvx 2>/dev/null) $HOME/.local/bin/uvx /opt/homebrew/bin/uvx /usr/local/bin/uvx uvx; do [ -x \"$p\" ] && exec \"$p\" --from git+https://github.com/BeehiveInnovations/zen-mcp-server.git zen-mcp-server; done; echo 'uvx not found' >&2; exit 1"],
       "env": {
         "PATH": "/usr/local/bin:/usr/bin:/bin:/opt/homebrew/bin:~/.local/bin",
-        "GEMINI_API_KEY": "your-key-here",
+        "GEMINI_API_KEY": "YOUR_GEMINI_API_KEY",
         "DISABLED_TOOLS": "analyze,refactor,testgen,secaudit,docgen,tracer",
         "DEFAULT_MODEL": "auto"
       }
@@ -272,9 +272,9 @@ DISABLED_TOOLS=
         "DEFAULT_THINKING_MODE_THINKDEEP": "high",
         
         // API configuration
-        "GEMINI_API_KEY": "your-gemini-key",
-        "OPENAI_API_KEY": "your-openai-key",
-        "OPENROUTER_API_KEY": "your-openrouter-key",
+        "GEMINI_API_KEY": "YOUR_GEMINI_API_KEY",
+        "OPENAI_API_KEY": "YOUR_OPENAI_API_KEY",
+        "OPENROUTER_API_KEY": "YOUR_OPENROUTER_API_KEY",
         
         // Logging and performance
         "LOG_LEVEL": "INFO",

@@ -36,8 +36,8 @@ Check that your API keys are properly set:
 cat .env
 
 # Ensure at least one key is set:
-# GEMINI_API_KEY=your-key-here
-# OPENAI_API_KEY=your-key-here
+# GEMINI_API_KEY=YOUR_GEMINI_API_KEY
+# OPENAI_API_KEY=YOUR_OPENAI_API_KEY
 ```
 
 If you need to update your API keys, edit the `.env` file and then restart Claude for changes to take effect.

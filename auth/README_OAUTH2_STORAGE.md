@@ -291,11 +291,11 @@ All sensitive data is encrypted using AES-256-GCM:
 ```python
 # Custom encryption key
 storage = OAuth2EncryptedStorage(
-    encryption_key="your-secret-key-here"
+    encryption_key="YOUR_OAUTH2_ENCRYPTION_KEY"
 )
 
 # Environment variable
-export OAUTH2_ENCRYPTION_KEY="your-secret-key"
+export OAUTH2_ENCRYPTION_KEY="YOUR_OAUTH2_ENCRYPTION_KEY"
 
 # macOS Keychain (automatic)
 # Key stored securely in system keychain
@@ -414,7 +414,7 @@ The storage uses a comprehensive SQLite schema with:
 ### Environment Variables
 ```bash
 # Encryption key (optional)
-export OAUTH2_ENCRYPTION_KEY="your-secret-key-here"
+export OAUTH2_ENCRYPTION_KEY="YOUR_OAUTH2_ENCRYPTION_KEY"
 
 # Database location (optional)
 export OAUTH2_DB_PATH="/path/to/oauth2.db"
@@ -666,7 +666,7 @@ Using ephemeral encryption key - tokens will not survive restart
 ```
 **Solution:** Configure persistent encryption key
 ```bash
-export OAUTH2_ENCRYPTION_KEY="your-secure-key-here"
+export OAUTH2_ENCRYPTION_KEY="YOUR_OAUTH2_ENCRYPTION_KEY"
 ```
 
 #### Integrity Verification Failures

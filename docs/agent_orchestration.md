@@ -46,7 +46,7 @@ Execute a single agent task synchronously and wait for completion.
   "timeout_seconds": 300,
   "working_directory": "/path/to/project",
   "agent_args": ["--allowedTools", "Edit Replace"],
-  "env_vars": {"ANTHROPIC_API_KEY": "your-key"},
+  "env_vars": {"ANTHROPIC_API_KEY": "YOUR_ANTHROPIC_API_KEY"},
   "files": ["auth.py", "tests/test_auth.py"]
 }
 ```

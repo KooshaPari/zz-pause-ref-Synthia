@@ -347,8 +347,8 @@ CUSTOM_MODEL_NAME=llama3.2                   # Default model name
 ### Development Setup (Balanced)
 ```env
 DEFAULT_MODEL=auto
-GEMINI_API_KEY=your-key
-OPENAI_API_KEY=your-key
+GEMINI_API_KEY=YOUR_GEMINI_API_KEY
+OPENAI_API_KEY=YOUR_OPENAI_API_KEY
 GOOGLE_ALLOWED_MODELS=flash,pro
 OPENAI_ALLOWED_MODELS=o4-mini,o3-mini
 ```
@@ -356,15 +356,15 @@ OPENAI_ALLOWED_MODELS=o4-mini,o3-mini
 ### Cost-Optimized Setup
 ```env  
 DEFAULT_MODEL=flash
-GEMINI_API_KEY=your-key
+GEMINI_API_KEY=YOUR_GEMINI_API_KEY
 GOOGLE_ALLOWED_MODELS=flash
 ```
 
 ### High-Performance Setup  
 ```env
 DEFAULT_MODEL=auto
-GEMINI_API_KEY=your-key
-OPENAI_API_KEY=your-key
+GEMINI_API_KEY=YOUR_GEMINI_API_KEY
+OPENAI_API_KEY=YOUR_OPENAI_API_KEY
 GOOGLE_ALLOWED_MODELS=pro
 OPENAI_ALLOWED_MODELS=o3
 ```
@@ -375,7 +375,7 @@ DEFAULT_MODEL=auto
 CUSTOM_API_URL=http://localhost:11434/v1
 CUSTOM_MODEL_NAME=llama3.2
 # Add cloud APIs as backup
-GEMINI_API_KEY=your-key
+GEMINI_API_KEY=YOUR_GEMINI_API_KEY
 ```
 
 Happy coding with your AI development team! 🤖✨
