@@ -5,11 +5,14 @@ where their dependencies aren't installed. Tests and runtime can still use other
 providers like OpenRouter without requiring google-genai.
 """
 
-from .base import ModelCapabilities, ModelProvider, ModelResponse
+from .azure_openai import AzureOpenAIProvider
+from .base import ModelProvider
+from .gemini import GeminiModelProvider
+from .openai import OpenAIModelProvider
 from .openai_compatible import OpenAICompatibleProvider
-from .openai_provider import OpenAIModelProvider
 from .openrouter import OpenRouterProvider
 from .registry import ModelProviderRegistry
+from .shared import ModelCapabilities, ModelResponse
 
 # Optional Gemini provider import
 try:  # pragma: no cover - environment may not have google-genai installed
@@ -24,6 +27,8 @@ __all__ = [
     "ModelResponse",
     "ModelCapabilities",
     "ModelProviderRegistry",
+    "AzureOpenAIProvider",
+    "GeminiModelProvider",
     "OpenAIModelProvider",
     "OpenAICompatibleProvider",
     "OpenRouterProvider",

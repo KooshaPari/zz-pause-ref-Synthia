@@ -1,9 +1,5 @@
 """
-Tool implementations and registry helpers for Zen MCP Server.
-
-Exposes concrete tool classes and a lightweight registry function
-`get_all_tools()` used by the HTTP server variant to discover tools
-without relying on the stdio MCP server registry.
+Tool implementations for PAL MCP Server
 """
 
 from __future__ import annotations
@@ -23,8 +19,10 @@ from .agent_or_llm import AgentOrLLMTool
 from .agent_registry import AgentRegistryTool
 from .agent_sync import AgentSyncTool
 from .analyze import AnalyzeTool
+from .apilookup import LookupTool
 from .challenge import ChallengeTool
 from .chat import ChatTool
+from .clink import CLinkTool
 from .codereview import CodeReviewTool
 from .consensus import ConsensusTool
 from .debug import DebugIssueTool
@@ -66,7 +64,9 @@ __all__ = [
     "DebugIssueTool",
     "DocgenTool",
     "AnalyzeTool",
+    "LookupTool",
     "ChatTool",
+    "CLinkTool",
     "ConsensusTool",
     "ListModelsTool",
     "PlannerTool",
