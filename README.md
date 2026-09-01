@@ -1,5 +1,7 @@
 # No Longer needed, Stop working on this :)
 
+
+[![AI slop inside](https://sladge.net/badge.svg)](https://sladge.net) [![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/KooshaPari/Synthia/total)](https://github.com/KooshaPari/Synthia/releases)
 # PAL MCP: Many Workflows. One Context.
 
 <div align="center">
